@@ -1,0 +1,58 @@
+name: afrikas_kitchen
+description: "A new Flutter project."
+
+# Prevents the package from being accidentally published to pub.dev.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# Version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+# Dependencies specify other packages needed for your package to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Adds the Cupertino Icons font to your application.
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended lints to encourage good coding practices.
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.2
+
+# Flutter-specific configuration.
+flutter:
+  # Ensure Material Icons font is included.
+  uses-material-design: true
+
+  # Assets can be added here.
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  # Fonts can be added here.
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
+# Configuration for flutter_launcher_icons.
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_version: 24
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
