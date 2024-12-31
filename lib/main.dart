@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Afrika\'s Kitchen',
       theme: ThemeData(
         fontFamily: 'Montserrat',
-        useMaterial3: true,
+        hintColor: Colors.orange,
+        useMaterial3: true, colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange).copyWith(surface: Colors.white10),
       ),
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
