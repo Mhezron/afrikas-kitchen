@@ -14,6 +14,10 @@ class SearchSection extends StatelessWidget {
             child: TextField(
               decoration: InputDecoration(
                hintText: 'search dish ...',
+               hintStyle: TextStyle(
+                 color: Colors.black54,
+                 fontSize: 20,
+                 fontWeight: FontWeight.w500),
                 //prefix: Icon(Icons.search),
                 //contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 border: OutlineInputBorder(
@@ -25,7 +29,7 @@ class SearchSection extends StatelessWidget {
                     width: 2
                   ),
                   borderRadius: BorderRadius.circular(40)
-                )
+                ),
               ),
             )),
             SizedBox(width: 10,),

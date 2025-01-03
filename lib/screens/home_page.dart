@@ -47,12 +47,15 @@ class HomePage extends StatelessWidget {
               child: SearchSection(),
             ),
             SizedBox(
-              height:300,
+              height:220,
               child: Categories(),
             ),
             SizedBox(
+              // height: 400,
+              height: MediaQuery.of(context).size.height * 0.2,
               child: Popular(),
-            )
+            ),
+             
             ],
           ),
         ),
